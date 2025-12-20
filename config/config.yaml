@@ -52,7 +52,7 @@ storage:
 
 crawler:
   request_interval: 1000 # 请求间隔(毫秒)
-  enable_crawler: true # 是否启用爬取新闻功能，如果 false，则直接停止程序
+  enable_crawler: false # 是否启用爬取新闻功能，如果 false，则直接停止程序
   use_proxy: false # 是否启用代理，false 时为关闭
   default_proxy: "http://127.0.0.1:10801"
 
@@ -80,7 +80,7 @@ report:
   reverse_content_order: false # 内容顺序：false=热点词汇统计在前，true=新增热点新闻在前
 
 notification:
-  enable_notification: true # 是否启用通知功能，如果 false，则不发送手机通知
+  enable_notification: false # 是否启用通知功能，如果 false，则不发送手机通知
   message_batch_size: 4000 # 消息分批大小（字节）(这个配置别动)
   dingtalk_batch_size: 20000 # 钉钉消息分批大小（字节）(这个配置也别动)
   feishu_batch_size: 30000 # 飞书消息分批大小（字节）
